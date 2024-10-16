@@ -8,3 +8,5 @@ LABEL employee="mohansai" \
 
 # when you are filtering the images using these any of the filters, then it will display respective image:
 #     docker images -f 'label=company=infosys'   -> -f or --filter is filter option
+
+# to check all filters, can use docker inspect imageid
