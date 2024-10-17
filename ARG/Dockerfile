@@ -1,8 +1,8 @@
-# FROM almalinux:9
-# ARG employee="mohansai" \
-#     course="devops"
-# RUN echo "Employee: $employee, Course: $course"
-# CMD ["sleep", "100"]
+FROM almalinux:9
+ARG employee="mohansai" \
+    course="devops"
+RUN echo "Employee: $employee, Course: $course"
+CMD ["sleep", "100"]
 
 # These key-values will show during or at build time only as ARG is used
 
@@ -38,6 +38,8 @@
 
 
 # Also, ARG is an excemption for the instruction FOR: ARG version to be provided at build time using --build-arg version=8
-ARG version
-FROM almalinux:${version:-9}
-CMD ["sleep", "100"]
+# If version is not provided then use FROM almalinux:${version:-9}
+# ARG version
+# FROM almalinux:${version}
+##FROM almalinux:${version:-9}
+# CMD ["sleep", "100"]
