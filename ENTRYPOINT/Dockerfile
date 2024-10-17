@@ -1,6 +1,6 @@
 FROM almalinux:9
 #CMD ["ping", "google.com"]   #Here, this parameter can be over ride to yahoo.com @ run time
-CMD ["ping", "google.com"]  
+ENTRYPOINT ["ping", "google.com"]  
 # CMD ["yahoo.com"]
 # ENTRYPOINT ["ping"]
 
