@@ -1,8 +1,10 @@
 FROM almalinux:9
-#CMD ["ping", "google.com"]
-#ENTRYPOINT ["ping", "google.com"]
-CMD ["yahoo.com"]
-ENTRYPOINT ["ping"]
+#CMD ["ping", "google.com"]   #Here, this parameter can be over ride to yahoo.com @ run time
+ENTRYPOINT ["ping", "google.com"]  
+# CMD ["yahoo.com"]
+# ENTRYPOINT ["ping"]
+
+#Here, cannot override, but entrypoint will append the params, ex if you give 
 
 
 
