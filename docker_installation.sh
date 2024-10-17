@@ -1,6 +1,6 @@
 #!/bin/bash
 
-user=${id -u}
+user=$(id -u)
 echo $?
 
 
