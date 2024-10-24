@@ -30,7 +30,7 @@ CMD ["sleep", "100"]
 # RUN echo "Employee: $employee, Course: $course"
 # CMD ["sleep", "100"]
 
-# in cli, while build use as below:
+# in cli, override as while build use as below:
 # docker build -t arg:v1 --build-arg course=aws .
 
 
